@@ -1,0 +1,17 @@
+.swiim {
+    padding-left: 28%;
+}
+
+.pointer{
+    cursor: pointer;
+}
+.block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidebar-profile{
+    width: 400px;
+    height: 50%;
+}

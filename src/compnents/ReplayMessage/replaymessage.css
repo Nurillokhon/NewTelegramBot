@@ -1,0 +1,26 @@
+.message-past{
+    height: 75vh;
+    width: 100%;
+    overflow: auto;
+    /* background: #c1c1c1; */
+}
+.text-card{
+    width: 40%;
+    padding: 0.3rem;
+    height: auto;
+}
+.operator-text{
+    float: right;
+    position: relative;
+    background-color: rgb(18, 135, 208) !important;
+    color: rgba(255, 255, 255, 0.767);
+}
+.user-text{
+    position: relative;
+}
+.message-time{
+    position: absolute;
+    right: 0.5rem;
+    bottom: 0.5rem;
+    font-size: 1rem;
+}
