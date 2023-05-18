@@ -10,22 +10,13 @@ const Login = () => {
 
     const navigate = useNavigate()
     const send = () =>{
-        console.log(login , password);
-        axios.post('https://asadbek6035.pythonanywhere.com/account/login/' ,{
-          phone_number: login,
-          password: password
-        })
-        .then(r =>{
-          console.log(r.data.data.token.access);
-          localStorage.setItem('token' , r.data.data.token.access)
-      
+        if(login === 'admin' && password === 'admin123'){
+          localStorage.setItem('token' , login)
           navigate('/home')
-        
-        })
-        .catch(e =>{
-          console.log(e);
-            alert('xato')
-        })
+        }
+        else{
+          alert('xato')
+        }
       }
     return (
         <div className='row gx-0'>
